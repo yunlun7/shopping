@@ -1,5 +1,6 @@
 // pages/category/index.js
 import { request } from "../../request/index.js";
+import regeneratorRuntime from '../../lib/runtime/runtime';
 Page({
       /* 
     0 web中的本地存储和 小程序中的本地存储的区别
@@ -64,9 +65,9 @@ Page({
   },
 
   // 获取分类数据
-  getCates(){
-    request({
-      url:"/api/public/v1/categories"
+  async getCates(){
+/*     request({
+      url:"/categories"
     })
     .then(res => {
 
@@ -84,6 +85,22 @@ Page({
         leftMenuList,
         rightMenuList
       })
+    }) */
+
+
+    // 使用es7 的async和await方式请求
+    const res = await request({ url: "/categories" });
+    // this.Cates = res.data.message;
+    this.Cates = res;
+    // 把接口的数据存入到本地存储中
+    wx.setStorageSync("cates", { time: Date.now(), data: this.Cates });
+    // 构造左侧的大菜单数据
+    let leftMenuList = this.Cates.map(v => v.cat_name);
+    // 构造右侧的商品数据
+    let rightMenuList = this.Cates[0].children;
+    this.setData({
+      leftMenuList,
+      rightMenuList
     })
   },
 
