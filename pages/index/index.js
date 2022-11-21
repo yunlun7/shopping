@@ -21,6 +21,7 @@ Page({
     //       // console.log(result);
     //     }
     //   });
+    // 此三段代码，同时发送三段异步请求
     this.getSwiperList();
     this.getCateList();
     this.getFloorList();

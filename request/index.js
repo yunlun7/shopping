@@ -11,6 +11,7 @@ export const request=(params)=>{
 
 
   ajaxTimes++;
+  // 再发送请求的时候，在出现这个效果，因此放在此处进行实现
   // 显示加载中 效果
   wx.showLoading({
     title: "加载中",
@@ -31,6 +32,7 @@ export const request=(params)=>{
      fail:(err)=>{
        reject(err);
      },
+    //  不管成功还是失败，都会执行的函数
      complete:()=>{
       ajaxTimes--;
       if(ajaxTimes===0){
