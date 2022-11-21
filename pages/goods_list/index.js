@@ -135,7 +135,7 @@ Page({
       this.getGoodsList();
     }
   },
-  // 下拉刷新事件 
+  // 下拉刷新事件 生命周期事件
   onPullDownRefresh(){
     // 1 重置数组
     this.setData({
