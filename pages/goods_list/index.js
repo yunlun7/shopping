@@ -103,6 +103,9 @@ Page({
       goodsList:[...this.data.goodsList,...res.goods]
       // goodsList:res.goodsList
     })
+    
+    // 关闭下拉刷新的窗口 如果没有调用下拉刷新的窗口 直接关闭也不会报错  
+    wx.stopPullDownRefresh();
   },
 
   // 标题点击事件 从子组件传递过来
@@ -123,7 +126,7 @@ Page({
     if(this.QueryParams.pagenum>=this.totalPages){
       // 没有下一页数据
       //  console.log('%c'+"没有下一页数据","color:red;font-size:100px;background-image:linear-gradient(to right,#0094ff,pink)");
-      wx.showToast({ title: '没有下一页数据' });
+      wx.showToast({ title: '没有更多了' });
         
     }else{
       // 还有下一页数据
@@ -131,6 +134,17 @@ Page({
       this.QueryParams.pagenum++;
       this.getGoodsList();
     }
+  },
+  // 下拉刷新事件 
+  onPullDownRefresh(){
+    // 1 重置数组
+    this.setData({
+      goodsList:[]
+    })
+    // 2 重置页码
+    this.QueryParams.pagenum=1;
+    // 3 发送请求
+    this.getGoodsList();
   }
 
 })
