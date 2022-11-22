@@ -15,3 +15,90 @@
     
 </view>
 
+<!-- 购物车的内容 -->
+<view class="cart_content">
+  <veiw class="cart_title">购物车</veiw>
+  <view class="cart_main">
+    <view class="cart_item">
+      <!-- 复选框 -->
+      <view class="cart_chk_wrap">
+        <checkbox-group bindchange="">
+          <checkbox>
+          </checkbox>
+        </checkbox-group>
+          
+      </view>
+      <!-- 商品图片 -->
+      <navigator class="cart_img_wrap">
+        <image src="http://image4.suning.cn/uimg/b2c/newcatentries/0000000000-000000000606013705_1_800x800.jpg" mode="widthFix" />  
+      </navigator>
+        
+      <!-- 商品信息 -->
+      <view class="cart_info_wrap">
+        <view class="goods_name">TCL 65Q960C 65英寸 哈曼卡顿 人工智能 金属超薄 64位34核 4K+HDR 原色量子点 曲面电视（灰色）</view>
+        <view class="goods_price_wrap">
+          <view class="goods_price">￥9990</view>
+          <view class="cart_num_tool">
+            <view class="num_edit">-</view>
+            <view class="goods_num">10</view>
+            <view class="num_edit">+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+        <view class="cart_item">
+      <!-- 复选框 -->
+      <view class="cart_chk_wrap">
+        <checkbox-group bindchange="">
+          <checkbox>
+          </checkbox>
+        </checkbox-group>
+          
+      </view>
+      <!-- 商品图片 -->
+      <navigator class="cart_img_wrap">
+        <image src="http://image4.suning.cn/uimg/b2c/newcatentries/0000000000-000000000606013705_1_800x800.jpg" mode="widthFix" />  
+      </navigator>
+        
+      <!-- 商品信息 -->
+      <view class="cart_info_wrap">
+        <view class="goods_name">TCL 65Q960C 65英寸 哈曼卡顿 人工智能 金属超薄 64位34核 4K+HDR 原色量子点 曲面电视（灰色）</view>
+        <view class="goods_price_wrap">
+          <view class="goods_price">￥9990</view>
+          <view class="cart_num_tool">
+            <view class="num_edit">-</view>
+            <view class="goods_num">10</view>
+            <view class="num_edit">+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+        <view class="cart_item">
+      <!-- 复选框 -->
+      <view class="cart_chk_wrap">
+        <checkbox-group bindchange="">
+          <checkbox>
+          </checkbox>
+        </checkbox-group>
+          
+      </view>
+      <!-- 商品图片 -->
+      <navigator class="cart_img_wrap">
+        <image src="http://image4.suning.cn/uimg/b2c/newcatentries/0000000000-000000000606013705_1_800x800.jpg" mode="widthFix" />  
+      </navigator>
+        
+      <!-- 商品信息 -->
+      <view class="cart_info_wrap">
+        <view class="goods_name">TCL 65Q960C 65英寸 哈曼卡顿 人工智能 金属超薄 64位34核 4K+HDR 原色量子点 曲面电视（灰色）</view>
+        <view class="goods_price_wrap">
+          <view class="goods_price">￥9990</view>
+          <view class="cart_num_tool">
+            <view class="num_edit">-</view>
+            <view class="goods_num">10</view>
+            <view class="num_edit">+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
