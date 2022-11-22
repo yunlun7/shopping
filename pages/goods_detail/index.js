@@ -84,6 +84,7 @@ Page({
     if (index === -1) {
       //3  不存在 第一次添加
       this.GoodsInfo.num = 1;
+      // 设置选中的状态  初始值为true
       this.GoodsInfo.checked = true;
       cart.push(this.GoodsInfo);
     } else {
