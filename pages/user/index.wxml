@@ -1,5 +1,6 @@
 <!--pages/user/index.wxml-->
 
+<!-- 用户个人信息模块 -->
 <view class="user_info_wrap">
   <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
     <image class="user_bg" src="{{userinfo.avatarUrl}}" ></image>
@@ -71,7 +72,7 @@
     </view>
     <!-- 推荐 -->
     <view class="recommend_wrap">
-      把应用推荐给其他人
+      将此应用推荐给其他人
     </view>
   </view>
 </view>

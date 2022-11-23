@@ -10,7 +10,7 @@ page{
     position: relative;
     .user_bg {
       height: 50vh;
-      // 高斯模糊
+      // 高斯模糊 CSS3滤镜
       filter: blur(10rpx);
     }
     .user_info {
@@ -54,8 +54,8 @@ page{
     position: absolute;
     width: 90%;
     left: 50%;
-    transform: translateX(-50%);
-    top:-40rpx;
+    transform: translate(-50%);
+    top: -40rpx;
 
     .history_wrap{
       background-color: #fff;
@@ -63,19 +63,20 @@ page{
       navigator{
         flex: 1;
         text-align: center;
-        padding: 10rpx 0;
+        padding: 10rpx;
         .his_num{
           color: var(--themeColor);
         }
         .his_name{}
       }
     }
+
     .orders_wrap{
       background-color: #fff;
       margin-top: 30rpx;
       .orders_title{
         padding: 20rpx;
-        border-bottom: 1rpx solid #ccc;
+        border-bottom: 1px solid #ccc;
       }
       .order_content{
         display: flex;
@@ -88,30 +89,33 @@ page{
             font-size: 40rpx;
           }
           .order_name{}
-        }
+        };
       }
     }
+
     .address_wrap{
       margin-top: 30rpx;
       background-color: #fff;
-      padding: 20rpx ;
+      padding: 20rpx;
     }
+
     .app_info_wrap{
       margin-top: 30rpx;
       background-color: #fff;
       .app_info_item{
-        padding: 20rpx ;
-        border-bottom: 1rpx solid #ccc;
+        padding: 20rpx;
+        border-bottom: 1px solid #ccc;
       }
       .app_info_contact{
         display: flex;
         justify-content: space-between;
       }
     }
+
     .recommend_wrap{
       margin-top: 30rpx;
       background-color: #fff;
-      padding: 20rpx ;
+      padding: 20rpx;
     }
   }
 }
